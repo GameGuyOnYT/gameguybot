@@ -1,7 +1,7 @@
 import json, discord, requests
 import os
 
-os.environ['TOKEN'] = 'LOLMTAwOTU3MTY1NzUzNjUxNjA5Ng.Gxy6hN.L5SaKZNMPzaM1CGJk_9dtJv3K4ta2v9K-5HeLQLOL'.replace("LOL", "")
+os.environ['TOKEN'] = 'LOLMTAwOTU3MTY1NzUzNjUxNjA5Ng.G9HVU0.kHfcG34SZIImap-D2YDiCgwc6VknrlRuNLRXeULOL'.replace("LOL", "")
 token = os.environ.get("TOKEN")
 
 client = discord.Client(intents=discord.Intents.default())

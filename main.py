@@ -11,9 +11,9 @@ def hello_world():
 
     @bot.listen()
     async def on_ready():
-        task_loop.start()  # important to start the loop
+        task_loop.start()
 
-    @tasks.loop(seconds=10)
+    @tasks.loop(seconds=18)
     async def task_loop():
         print("loop point for debug hahaha")
         content = json.loads(requests.get("https://api.whatexploitsare.online/status").text)
@@ -75,6 +75,7 @@ def hello_world():
 
         await msg.edit(embed=embed_status)
 
-    bot.run(token)
+    while bot.run(token):
+        return "ok"
 
 app.run(host='', port=8080)
